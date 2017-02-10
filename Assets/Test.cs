@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+public class Test : MonoBehaviour {	
 	// Update is called once per frame
 	void Update () {
-		
+		Vector3 next = transform.position;
+		next.z-=1f*Time.deltaTime;
+		transform.position = next;
 	}
 }
